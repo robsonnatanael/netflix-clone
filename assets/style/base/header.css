@@ -1,0 +1,85 @@
+header .container {
+  height: 4.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 9.0625rem;
+  height: 2.5625rem;
+  padding: 0.5rem;
+
+  background-image: url(../../img/netflix-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: var(--red);
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin-left: 0.3125rem;
+  text-indent: -9999px;
+}
+
+.nav ul {
+  display: block;
+  background: var(--black);
+}
+
+.nav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.nav ul li:not(:first-child) {
+  display: none;
+}
+
+.nav.menuResponsive ul li {
+  display: block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--gray);
+  display: block;
+  align-items: center;
+  width: 18.75rem;
+  padding: 1.25rem;
+}
+
+.nav ul li a:hover {
+  color: var(--white);
+}
+
+.nav ul li a.icon {
+  display: block;
+  width: 2.8125rem;
+}
+
+.nav.menuResponsive ul li a.icon {
+  width: 18.75rem;
+  text-align: right;
+}
+
+@media (min-width: 37.5rem) { /* 600px */
+  .nav ul li:not(:first-child) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .nav ul li a {
+    width: auto;
+  }
+
+  .nav ul li a.icon {
+    display: none;
+  }
+}
+
+@media (min-width: 56.25rem) { /* 900px */
+}
+
+@media (min-width: 75rem) { /* 1200px */
+}

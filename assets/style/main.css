@@ -1,46 +1,18 @@
+@import url(./partials/reset.css);
+@import url(./partials/fonts.css);
+@import url(./partials/colors.css);
+@import url(./base/header.css);
 @import url(./owl/owl.carousel.min.css);
 @import url(./owl/owl.theme.default.min.css);
 
-:root {
-  --red: #e50914;
-  --black: #141414;
-  --white: #fff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: var(--black);
-  font-family: "Arial", Times, serif;
+  font-family: var(--font-content);
   color: var(--white);
 }
 
-header .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header .logo {
-  margin-left: 5px;
-  color: var(--red);
-  font-family: "Arial Black", Times;
-  font-size: 40px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #aaa;
-  margin-right: 10px;
-}
-
-header nav a:hover {
-  color: var(--white);
+.wrapper {
+  box-sizing: border-box;
 }
 
 /* Main Movie */
