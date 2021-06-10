@@ -33,6 +33,7 @@ body {
 .main-movie .sinopse {
   margin-top: 10px;
   margin-bottom: 40px;
+  line-height: 2rem;
 }
 
 .movie-title {
